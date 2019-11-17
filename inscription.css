@@ -1,10 +1,8 @@
 body{
-    background: url("fondinscription.jpg");
-    background-repeat: no-repeat;
+    background-image:url(fondprof.jpg);
     background-size: cover;
     flex-direction: row;
     margin:0px;
-    text-align: center;
     }
 
     h1 {
@@ -20,5 +18,5 @@ body{
     }
 
     .align{
-        margin-left: 60%;   
+        margin-left: 60%;
     }

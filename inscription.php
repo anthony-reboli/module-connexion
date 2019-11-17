@@ -42,7 +42,7 @@ $connexion->close();
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="inscription.css">
-	<title>page connexion</title>
+	<title>page d'inscription</title>
 </head>
 <body>
 
@@ -67,7 +67,7 @@ $connexion->close();
 						</tr>
 						<td align="right"><label>Nom:</label>
 							<input type="text" name="nom" placeholder="Entrez votre Nom"></td><br/>
-						</tr>	
+						</tr>
 						<tr>
 							<td align="right"><label>Mot de passe:</label>
 								<input type="password" name="mdp" placeholder="Entrez votre mot de passe"></td><br/>
@@ -83,6 +83,7 @@ $connexion->close();
 								</table>
 							</form>
 						</div>
+
 
 						<footer>
 
