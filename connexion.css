@@ -1,7 +1,23 @@
-body {
+#body2 {
 	background-image:  url("fondprof.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	font-family: 'Trade Winds', cursive;
+
+
+}
+nav, h1{
+
+	font-family: 'Trade Winds', cursive;
+}
+
+
+#container{
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin-top: 10%;
+font-family: 'Trade Winds', cursive;
 
 }
 

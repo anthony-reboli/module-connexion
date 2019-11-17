@@ -4,19 +4,34 @@ body{
     flex-direction: row;
     margin:0px;
     }
+p,label{
+  font-family: 'Trade Winds', cursive;
 
+}
     h1 {
+      display: flex;
+      justify-content: center;
         margin-top: 10%;
         margin-right: 30%;
         font-size: 40px;
         text-shadow: -0px -4px rgb(6, 146, 240), 1px 1px #333;
     }
 
+.titreinscription{
+
+}
     .form{
         margin-top: -10%;
         font-size: 25px;
+        font-family: 'Trade Winds', cursive;
+
     }
 
     .align{
         margin-left: 60%;
     }
+
+footer{
+margin-left: 40%;
+
+}

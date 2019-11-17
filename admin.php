@@ -8,7 +8,7 @@
     {
         include 'barnav.php';
     }
-  
+
  $connexion = mysqli_connect("localhost", /*nom de l'admin entre guillemet*/"root", /*mot de passe entre guillemet*/"", /*nom de la base de donnée entre guillemet*/"moduleconnexion");
   $requete = /*Choix de la requête*/"SELECT `utilisateurs`.`id`, `utilisateurs`.`login`, `utilisateurs`.`prenom`, `utilisateurs`.`nom`, `utilisateurs`.`password`
 FROM `utilisateurs`;";
@@ -22,13 +22,15 @@ FROM `utilisateurs`;";
         <meta sharset="utf-8">
         <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
         <link rel="stylesheet" href= "admin.css">
+        <link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
+
     </head>
 
 
 
 <body>
 
-<?php 
+<?php
 
 if ($_SESSION['login'] !="admin")
 {
@@ -66,4 +68,3 @@ else{
 
 
 </body>
-

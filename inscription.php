@@ -42,6 +42,8 @@ $connexion->close();
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="inscription.css">
+	<link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
+
 	<title>page d'inscription</title>
 </head>
 <body>
@@ -51,8 +53,10 @@ $connexion->close();
 	include 'barnav.php';
 
 	?>
-
+<div id="titreinscription">
 	<h1>Inscrivez-vous</h1>
+
+</div>
 
 	<div class="form" align="center">
 		<form method="POST" action="inscription.php">
