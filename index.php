@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
+
 <?php
 session_start();
 if (!isset($_SESSION['login']))
@@ -14,7 +16,7 @@ if (!isset($_SESSION['login']))
         <meta sharset="utf-8">
         <link rel="stylesheet" href= "index.css">
     </head>
-        
+
     <?php
     if ($_SESSION['login'] == true)
     {
@@ -52,7 +54,3 @@ if (!isset($_SESSION['login']))
         </footer>
 
 </body>
-        
-
-
-        

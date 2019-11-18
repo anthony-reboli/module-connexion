@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
 
+</head>
 <?php
 session_start();
 $connexion = mysqli_connect("localhost","root","","moduleconnexion");
@@ -14,7 +17,7 @@ $data = mysqli_fetch_assoc($req);
         <meta sharset="utf-8">
         <link rel="stylesheet" href= "profil.css">
     </head>
-        
+
         <?php
     if ($_SESSION['login'] == true)
     {
@@ -28,9 +31,12 @@ $data = mysqli_fetch_assoc($req);
 
  <body id="Alexfond">
 
-            <h1 id="h1">Modifiez votre profil</h1><br>
+<div class="titreprofil">
+  <h1 id="h1">Modifiez votre profil</h1><br>
+</div>
 
-                <div>
+
+                <div id="profilform">
 
                     <form method="POST" action="profil.php">
 
@@ -45,7 +51,7 @@ $data = mysqli_fetch_assoc($req);
 
                         <label>nouveau nom:</label>
                         <input type="text" value="<?php echo $data['nom']?>" placeholder="Nouveau nom" name="nom"></input><br><br/>
-            
+
                         <input type="submit" name="Modifier" value ="Valider">
 
                     </form><br>

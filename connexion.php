@@ -2,7 +2,8 @@
 <head>
  <meta charset="utf-8">
  <!-- importer le fichier de style -->
- <link rel="stylesheet" href="index.css" media="screen" type="text/css" />
+ <link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="connexion.css" media="screen" type="text/css" />
 </head>
 <?php
 session_start();
@@ -15,7 +16,7 @@ session_start();
         include 'barnav.php';
     }
     ?>
-<body>
+<body id="body2">
     <div id="container">
         <!-- zone de connexion -->
 
@@ -44,7 +45,7 @@ session_start();
         <!-- tester si l'utilisateur est connecté -->
         <?php
 
-   
+
 
   ?>
 
@@ -63,15 +64,15 @@ if(isset($_POST['login']) && isset($_POST['password']))
     // connexion à la base de données
     $connexion = mysqli_connect ("localhost", "root", "", "moduleconnexion");
 
-    
+
     // on applique les deux fonctions mysqli_real_escape_string et htmlspecialchars
     // pour éliminer toute attaque de type injection SQL et XSS
-    $login = mysqli_real_escape_string($connexion,htmlspecialchars($_POST['login'])); 
+    $login = mysqli_real_escape_string($connexion,htmlspecialchars($_POST['login']));
     $password = mysqli_real_escape_string($connexion,htmlspecialchars($_POST['password']));
-    
+
     if($login !== "" && $password !== "")
     {
-        $requete = "SELECT count(*) FROM utilisateurs where 
+        $requete = "SELECT count(*) FROM utilisateurs where
         login = '".$login."' and password = '".$password."' ";
         $exec_requete = mysqli_query($connexion,$requete);
         $reponse      = mysqli_fetch_array($exec_requete);
@@ -87,9 +88,9 @@ if(isset($_POST['login']) && isset($_POST['password']))
         {
            header('Location: connexion.php?erreur=1'); // utilisateur ou mot de passe incorrect
         }
-        
+
    }
-}    
+}
 
 if(isset($_GET['deconnexion']))
 {
